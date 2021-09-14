@@ -44,6 +44,7 @@
   }
   
   footer {
+      width: 100%;
     margin: 0 auto;
     text-align: center;
     background-color: #2f4f4f;
@@ -53,9 +54,15 @@
   ol {
     list-style-type: circle;
   }
+  .image {
+      margin-right: 0.5rem;
+  }
   .img {
       padding: 0;
       width: 100%;
+  }
+  .icon {
+      padding-left: 0.9rem;
   }
   
   .main {
@@ -72,6 +79,11 @@
   flex-direction: column;
   width: 70%;
   }
+  .wrapper-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+  }
   
   .fio {
     max-width: 660px;
@@ -84,8 +96,9 @@
       font-size: 50%;
   }
   .contacts li {
-    margin-right: 15px;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
     align-items: center;
     text-align: center;
   }
@@ -94,6 +107,7 @@
       color: #696969;
       background-color: #696969;
       height: 5px;
+      width: 18rem;
   }
   .contacts {
       text-align: center;
