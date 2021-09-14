@@ -13,7 +13,7 @@
             <img class="img" src = "pic/foto.jpeg" alt = "myfoto">
             <figcaption class="infofoto">Origin photo</figcaption>
         </figure>
-        <div class= "contacts">
+        <div id = "Contacts" class= "contacts">
             <h3>Contacts</h3>
             <hr>
             <ul class = "icon">
@@ -34,17 +34,24 @@
             <h1>Dilbar Akkaya</h1>
             <h2>Frontend developer</h2>
         </div>
-        <nav>
-             <ul>
-                 <li><a href = "#Education">Education</a></li>
-                 <li><a href = "#Courses">Courses</a></li>
-                 <li><a href = "#Personalskills">Personal skills</a></li>
-                 <li><a href = "#Experience">Experience</a></li>
-                 <li><a href = "#Language">Language</a></li>
-                 <li><a href = "#Self-introduction">Self-introduction</a></li>
-                 <li><a href = "#Contacts">Contacts</a></li>
+        <div class="container">
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+             <ul class="nav-list">
+                 <li class="nav-item"><a href = "#Education" class="nav-link">Education</a></li>
+                 <li class="nav-item"><a href = "#Courses" class="nav-link">Courses</a></li>
+                 <li class="nav-item"><a href = "#Personalskills" class="nav-link">Personal skills</a></li>
+                 <li class="nav-item"><a href = "#Experience" class="nav-link">Experience</a></li>
+                 <li class="nav-item"><a href = "#Language" class="nav-link">Language</a></li>
+                 <li class="nav-item"><a href = "#Self-introduction" class="nav-link">Self-introduction</a></li>
+                 <li class="nav-item"><a href = "#Contacts" class="nav-link">Contacts</a></li>
              </ul>
       </nav>
+        </div>
     </header>
     <section class="information">
         <article id = "Education">
@@ -116,7 +123,7 @@ I learn HTML, CSS, JS, Git, Typescript. tried to do tasks Wildlife, Virtual pian
           </div>
         </article>
     </section>
-            <footer id = "Contacts" class="contacts">
+            <footer class="contacts">
                     <div class="wrapper-footer">
                         <a href = "https://rs.school/js/">
                             <img src = "https://rs.school/images/rs_school_js.svg" width = "90" alt = "RSSchool wait"></a>
@@ -128,4 +135,5 @@ I learn HTML, CSS, JS, Git, Typescript. tried to do tasks Wildlife, Virtual pian
             
     </main>
     </body>
+    <script src="script.js"></script>
     </html>
