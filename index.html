@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dilbar Akkaya</title>
     <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body class="forbody">
     <main class="main">
@@ -13,9 +16,11 @@
             <img class="img" src = "pic/foto.jpeg" alt = "myfoto">
             <figcaption class="infofoto">Origin photo</figcaption>
         </figure>
+   
         <div id = "Contacts" class= "contacts">
+            <hr class="line-sidebar">
             <h3>Contacts</h3>
-            <hr>
+            
             <ul class = "icon">
                 <li><a href = "https://github.com/DilbarAkkaya">
                 <img class="image" src = "pic/gh.gif" width = "50" alt = "GH"></a>DilbarAkkaya</li>
@@ -56,6 +61,7 @@
     <section class="information">
         <article id = "Education">
             <div>
+                <hr class="line-section">
                 <h3>Education</h3>
                 <p>Kama State Academy of Engineering and Economics (1999-2004)</p>
             </div>
@@ -64,14 +70,14 @@
             <div>
                 <h3>Courses</h3>
                     <ol>
-                        <li>JavaScript/Front-end course, Rolling Scopes School (2021 - to this day) International School</li>
-                        <li>Common health safety unit, occupational health and safety training (2018) Turkey</li>
-                        <li>Public education center, english language (2017) Turkey</li>
-                        <li>Lingva Progress Kazan, english language (2013) Russia</li>
-                        <li>«Alttelecom» LTD, sales training (2006) Russia</li>
-                        <li>Home Credit and Russian standard banks, credit advisor (2006) Russia</li>
-                        <li>Consultant Plus, system training (2004) Russia</li>
-                        <li>Kama State Academy of Engineering and Economics, database design and creation using Access DBMS (2002) Russia</li>
+                        <li class="item">JavaScript/Front-end, Rolling Scopes School (2021 - to this day) International School</li>
+                        <li class="item">Common health safety unit, occupational health and safety training (2018) Turkey</li>
+                        <li class="item">Public education center, english language (2017) Turkey</li>
+                        <li class="item">Lingva Progress Kazan, english language (2013) Russia</li>
+                        <li class="item">«Alttelecom» LTD, sales training (2006) Russia</li>
+                        <li class="item">Home Credit and Russian standard banks, credit advisor (2006) Russia</li>
+                        <li class="item">Consultant Plus, system training (2004) Russia</li>
+                        <li class="item">Kama State Academy of Engineering and Economics, database design and creation using Access DBMS (2002) Russia</li>
                     </ol>
             </div>
         </article>
@@ -79,17 +85,18 @@
             <div>
                 <h3>Experience</h3>
                 <span>I do not have experience in frontend development, but everything ahead. This is my second try to get knowledge in the field of frontend development.
-I learn HTML, CSS, JS, Git, Typescript. tried to do tasks Wildlife, Virtual piano, Online Zoo, Photo Filter, Clean Code, Match-match game</span>
+I learn HTML, CSS, JS, Git, Typescript. I tried to do tasks Wildlife, Virtual piano, Online Zoo, Photo Filter, Clean Code, Match-match game.</span>
 <h4>Code example</h4>
-<pre><code>document.querySelector(".fullscreen").addEventListener('click', makeFullScreen);
-    function makeFullScreen() {
-    if (document.fullscreenElement === null) {
-        document.documentElement.requestFullscreen();
-    } else {
+<pre><code class="javascript">
+    document.querySelector(".fullscreen").addEventListener('click', makeFullScreen);
+      function makeFullScreen() {
+        if (document.fullscreenElement === null) {
+          document.documentElement.requestFullscreen();
+           } else {
         if (document.fullscreenEnabled){
         document.exitFullscreen();
         }
-    }
+      }
     }</code></pre>
             </div>
         </article>
@@ -97,9 +104,9 @@ I learn HTML, CSS, JS, Git, Typescript. tried to do tasks Wildlife, Virtual pian
             <div>
                 <h3>Language</h3>
                 <ul>
-                    <li>Turkish B2</li>
-                    <li>English A2</li>
-                    <li>Deutsch A1</li>
+                    <li class="item">Turkish B2</li>
+                    <li class="item">English A2</li>
+                    <li class="item">Deutsch A1</li>
                 </ul>
             </div>
         </article>
@@ -107,20 +114,22 @@ I learn HTML, CSS, JS, Git, Typescript. tried to do tasks Wildlife, Virtual pian
             <div>
                 <h3>Personal skills</h3>
                 <ul>
-                    <li>Analytical mind</li>
-                    <li>Work with large amounts of information</li>
-                    <li>To focus on results</li>
-                    <li>To communicate quickly with strangers</li>
-                    <li>Responsible</li>
-                    <li>Easily trained</li>
+                    <li class="item">Analytical mind</li>
+                    <li class="item">Work with large amounts of information</li>
+                    <li class="item">To focus on results</li>
+                    <li class="item">To communicate quickly with strangers</li>
+                    <li class="item">Responsible</li>
+                    <li class="item">Easily trained</li>
                 </ul>
             </div>
         </article>
         <article id="Self-introduction">
           <div>
             <h3>Self-introduction</h3>
+            <div class="wrapper-video">
             <iframe width="460" height="360" src="https://www.youtube.com/embed/2USAb8fIyfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+            </div>  
+        </div>
         </article>
     </section>
             <footer class="contacts">
@@ -135,5 +144,18 @@ I learn HTML, CSS, JS, Git, Typescript. tried to do tasks Wildlife, Virtual pian
             
     </main>
     </body>
+    <script>
+   const anchors = document.querySelectorAll('a[href* ="a"]');
+   for (let anchor of anchors) {
+       anchor.addEventListener('click', function(e) {
+           e.preventDefault();
+           const blockId = anchor.getAttribute('href').substr(i);
+           document.getElementById(blockId).scrollIntoView({
+               behavior: 'smooth',
+               block: 'start',
+           })
+       })
+   }
+    </script>
     <script src="script.js"></script>
     </html>
