@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Dilbar Akkaya</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
@@ -20,33 +20,22 @@
         <div id = "Contacts" class= "contacts">
             <hr class="line-sidebar">
             <h3>Contacts</h3>
-            
-            <ul class = "icon">
+              <ul class = "icon">
                 <li><a href = "https://github.com/DilbarAkkaya">
-                <img class="image" src = "pic/gh.gif" width = "50" alt = "GH"></a>DilbarAkkaya</li>
+                <img class="image" src = "pic/gh.gif" width = "50" alt = "GH"></a><span>DilbarAkkaya</span></li>
                 <li><a href = "https://discord.com/channels/516715744646660106/846687560944189460">
-                <img class="image" src = "pic/icons8-discord-48.png" width = "50" alt = "DS"></a>@DilbarAkkaya#8250</li>
+                <img class="image" src = "pic/icons8-discord-48.png" width = "50" alt = "DS"></a><span>@DilbarAkkaya#8250</span></li>
                 <li><a href = "mailto:dilbarmutavalova@gmail.com">
-                <img class="image" src = "pic/gm.jpg" width = "45" height="40" alt = "GMail"></a>dilbarmutavalova@gmail.com</li>
+                <img class="image" src = "pic/gm.jpg" width = "45" height="40" alt = "GMail"></a><span>dilbarmutavalova@gmail.com</span></li>
                 <li><a href = "https://web.telegram.org/z/">
-                <img class="image" src = "pic/telegram-64x64.png" width = "50" alt = "Tg"></a>dilbar_ya</li>
+                <img class="image" src = "pic/telegram-64x64.png" width = "50" alt = "Tg"></a><span>dilbar_ya</span></li>
             </ul>
         </div>
     </aside>
     <div class="wrapper">
       <header>
-        <div class = "fio">
-            <h1>Dilbar Akkaya</h1>
-            <h2>Frontend developer</h2>
-        </div>
-        <div class="container">
-        <nav class="navbar">
-            <div class="hamburger-menu">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </div>
-             <ul class="nav-list">
+                <nav class="navbar">
+                 <ul class="nav-list">
                  <li class="nav-item"><a href = "#Education" class="nav-link">Education</a></li>
                  <li class="nav-item"><a href = "#Courses" class="nav-link">Courses</a></li>
                  <li class="nav-item"><a href = "#Personalskills" class="nav-link">Personal skills</a></li>
@@ -55,10 +44,22 @@
                  <li class="nav-item"><a href = "#Self-introduction" class="nav-link">Self-introduction</a></li>
                  <li class="nav-item"><a href = "#Contacts" class="nav-link">Contacts</a></li>
              </ul>
+                  <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
       </nav>
-        </div>
+ 
     </header>
-    <section class="information">
+    <section>
+        <h1>CV</h1>
+        <article id = "fio">
+            <div class = "fio">
+                <h5>Dilbar Akkaya</h5>
+                <h2>Frontend developer</h2>
+            </div>
+        </article>
         <article id = "Education">
             <div>
                 <hr class="line-section">
@@ -68,6 +69,7 @@
         </article>
         <article id = "Courses">
             <div>
+                <hr class="line-section">
                 <h3>Courses</h3>
                     <ol>
                         <li class="item">JavaScript/Front-end, Rolling Scopes School (2021 - to this day) International School</li>
@@ -83,6 +85,7 @@
         </article>
         <article id = "Experience">
             <div>
+                <hr class="line-section">
                 <h3>Experience</h3>
                 <span>I do not have experience in frontend development, but everything ahead. This is my second try to get knowledge in the field of frontend development.
 I learn HTML, CSS, JS, Git, Typescript. I tried to do tasks Wildlife, Virtual piano, Online Zoo, Photo Filter, Clean Code, Match-match game.</span>
@@ -99,9 +102,22 @@ I learn HTML, CSS, JS, Git, Typescript. I tried to do tasks Wildlife, Virtual pi
       }
     }</code></pre>
             </div>
+            <div>
+                <hr class="line-section">
+                <h4>Projects (tasks from RSSchool)</h4>
+                <ul>
+                    <li class="item">Wildlife<a href="https://goofy-bhaskara-aa278c.netlify.app/"><img class="img" src="pic/WL.png" alt="1"></a><p>It was necessary to make a page. Usage technologies: HTML, CSS, Figma</p></li>
+                    <li class="item">Presentaion<a href="https://suspicious-goodall-b182c7.netlify.app/"><img class="img" src="pic/pr.png" alt="2"></a><p>It was necessary to prepare a presentation on a given topic, suggested or approved by mentor. 
+                        Usage Technologies: HTML Presentation Framework Reveal, OBS</p></li>
+                        <li class="item">Virtual piano<a href="https://determined-agnesi-5ba2c0.netlify.app/"><img class="img" src="pic/vp.png" alt="3"></a><p>This task is to implement the virtual piano. Usage technologies: Vanilla JavaScript, DOM</p></li>
+                    <li class="item">Match match game<a href="https://dilbarakkaya-jsfe2021q1.netlify.app/"><img class="img" src="pic/mm.png" alt="4"></a><p>This task is to implement the match-match game. The game is often used to train memory. Usage technologies: Webpack, Typescript</p></li>
+                   
+                </ul>
+            </div>
         </article>
         <article id = "Language">
             <div>
+                <hr class="line-section">
                 <h3>Language</h3>
                 <ul>
                     <li class="item">Turkish B2</li>
@@ -112,6 +128,7 @@ I learn HTML, CSS, JS, Git, Typescript. I tried to do tasks Wildlife, Virtual pi
         </article>
         <article id = "Personalskills">
             <div>
+                <hr class="line-section">
                 <h3>Personal skills</h3>
                 <ul>
                     <li class="item">Analytical mind</li>
@@ -125,9 +142,10 @@ I learn HTML, CSS, JS, Git, Typescript. I tried to do tasks Wildlife, Virtual pi
         </article>
         <article id="Self-introduction">
           <div>
+            <hr class="line-section">
             <h3>Self-introduction</h3>
             <div class="wrapper-video">
-            <iframe width="460" height="360" src="https://www.youtube.com/embed/2USAb8fIyfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="460" height="360" src="https://www.youtube.com/embed/2USAb8fIyfs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>  
         </div>
         </article>
@@ -143,19 +161,7 @@ I learn HTML, CSS, JS, Git, Typescript. I tried to do tasks Wildlife, Virtual pi
     </div>
             
     </main>
-    </body>
-    <script>
-   const anchors = document.querySelectorAll('a[href* ="a"]');
-   for (let anchor of anchors) {
-       anchor.addEventListener('click', function(e) {
-           e.preventDefault();
-           const blockId = anchor.getAttribute('href').substr(i);
-           document.getElementById(blockId).scrollIntoView({
-               behavior: 'smooth',
-               block: 'start',
-           })
-       })
-   }
-    </script>
     <script src="script.js"></script>
+    </body>
+
     </html>
