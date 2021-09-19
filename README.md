@@ -1,3 +1,3 @@
-https://DilbarAkkaya.github.io/rsschool-cv/cv
-https://DilbarAkkaya.github.io/rsschool-cv/cv
+
+https://dilbarakkaya.github.io/rsschool-cv/
 
