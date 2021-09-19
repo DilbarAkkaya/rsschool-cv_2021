@@ -53,6 +53,11 @@
   }
   h3 {
     color: #2e8179;
+    font-weight: bold;
+  }
+  h4 {
+    color: #2e8179;
+    font-weight: bold;
   }
   article {
     padding-left: 15px;
@@ -76,12 +81,22 @@
   .item {
     letter-spacing: 1px;
     padding-bottom: 15px;
+    color: #2e8179;
+    font-weight: bold;
   }
   .item::before {
     color: #2e8179;
     font: 1em sans-serif;
     content: "✎ ";
     padding-right: 3px;
+  }
+  p {
+    color: #2e8179;
+    font-weight: bold;
+  }
+  span {
+    font-weight: bold;
+    color: #2e8179;
   }
   .image {
       margin-right: 0.5rem;
@@ -208,9 +223,9 @@
   }
   .nav-link {
     color: #2e8179;
-    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    text-decoration: none;
     position: relative;
 
 }
